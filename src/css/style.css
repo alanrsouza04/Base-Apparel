@@ -1,0 +1,99 @@
+*{
+    border: 0;
+    margin: 0;
+}
+body{
+    max-width: 1440px;
+    max-height: 768px;
+    overflow: hidden;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12em;
+    padding-right: 12em;
+    padding-top: 4em;
+}
+.logo{
+    width: 13em;
+    margin-bottom: 6em;
+}
+.h1{
+    font-size: 5em;
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+.h{
+    font-size: 5em;
+    font-weight: 400;
+}
+.p{
+    color: hsl(0, 36%, 70%);
+    margin-top: 2em;
+    padding-right: 5em;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+.email{
+    border: solid 0.2px hsl(0, 36%, 70%);
+    width: 80%;
+    height: 3em;
+    padding-left: 2em;
+    border-radius: 20px;
+    color: hsl(0, 36%, 70%);
+}
+.error{
+    color: hsl(0, 93%, 68%);
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    visibility: hidden;
+}
+.errori{
+    position: absolute;
+    right: 57em;
+    top: 35.8em;
+    visibility: hidden;
+}
+.sub{
+    background: linear-gradient( 135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 6em;
+    height: 3.2em;
+    border-radius: 20px;
+    position: absolute;
+    top: 42.3em;
+    right: 61em;
+    cursor: pointer;
+    box-shadow: 6px 6px 5px 0px #BFBFBF;
+}
+.right{
+    width: 60vw;
+    height: 100vh;
+}
+.desk{
+    width: 100%;
+    height: 100%;
+}
+.form.erro .email{
+    border: 1px solid hsl(0, 93%, 68%);
+}
+.form.erro .error{
+    visibility: visible;
+}
+.form.erro .errori{
+    visibility: visible;
+}
+.sub:hover{
+    background: linear-gradient(135deg,hsl(0, 40%, 90%),hsl(0, 80%, 86%));
+    width: 7em;
+    height: 4em;
+    top: 41.9em;
+}
